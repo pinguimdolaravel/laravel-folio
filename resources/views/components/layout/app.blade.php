@@ -82,9 +82,10 @@
     </style>
 </head>
 <body class="antialiased">
-<ul class="px-4 py-8 space-y-2
-    relative bg-dots-darker bg-center
-    bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white dark:text-white
+<ul class="px-4 pt-2 space-y-1
+    relative bg-dots-darker bg-center text-xs
+    bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500
+    selection:text-white dark:text-white
     ">
     @foreach($routes as $route)
         <li>
@@ -99,7 +100,7 @@
         bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900
         selection:bg-red-500 selection:text-white dark:text-white
         ">
-    {{ $slot }}
+    <div class="-mt-40">{{ $slot }}</div>
 </div>
 </body>
 </html>

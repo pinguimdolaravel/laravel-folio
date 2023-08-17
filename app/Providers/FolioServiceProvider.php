@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Folio\Folio;
 
@@ -24,7 +25,7 @@ class FolioServiceProvider extends ServiceProvider
             ->middleware([
                 '*' => [
                     //
-                ],
+               ],
             ]);
     }
 }
