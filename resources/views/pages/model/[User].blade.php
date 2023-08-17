@@ -2,7 +2,7 @@
 
 use function Laravel\Folio\middleware;
 
-middleware('auth');
+\Laravel\Folio\withTrashed();
 
 ?>
 

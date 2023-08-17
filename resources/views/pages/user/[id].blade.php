@@ -1,6 +1,6 @@
 @php
 
-    $user = \App\Models\User::find($id);
+    $user = \App\Models\User::withTrashed()->find($id);
 
 @endphp
 
